@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="m0A-Bh-JRa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Playlists-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="PlaylistMasterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="KNd-6T-G9D">
+                                <rect key="frame" x="2" y="66" width="157" height="165"/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="gkr-7K-Ns4">
+                                <rect key="frame" x="161" y="66" width="157" height="165"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hxe-dF-jxv" appends="YES" id="cFw-MQ-tdY"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="W1Y-HS-icv">
+                                <rect key="frame" x="2" y="233" width="157" height="165"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="etr-AP-gua" appends="YES" id="spX-za-MV1"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="GXo-lX-dFM">
+                                <rect key="frame" x="161" y="233" width="157" height="165"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qfR-wT-lXx" appends="YES" id="M4j-Xs-PNu"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="1Wr-5l-Ngc">
+                                <rect key="frame" x="2" y="400" width="157" height="165"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kiq-ss-qoI" appends="YES" id="5AP-wA-RWT"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="KA4-xS-jKj">
+                                <rect key="frame" x="161" y="400" width="157" height="165"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Wda-GB-qNr" appends="YES" id="q7k-Yf-6yq"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="width" secondItem="W1Y-HS-icv" secondAttribute="width" id="1sH-6v-0In"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="2" id="9iY-oQ-GEh"/>
+                            <constraint firstItem="gkr-7K-Ns4" firstAttribute="leading" secondItem="KNd-6T-G9D" secondAttribute="trailing" constant="2" id="E2Z-rE-ZUL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1Wr-5l-Ngc" secondAttribute="bottom" constant="2" id="EP5-TL-HQM"/>
+                            <constraint firstItem="W1Y-HS-icv" firstAttribute="top" secondItem="KNd-6T-G9D" secondAttribute="bottom" constant="2" id="HLT-QX-t4n"/>
+                            <constraint firstItem="1Wr-5l-Ngc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="2" id="INQ-nr-Haj"/>
+                            <constraint firstItem="KA4-xS-jKj" firstAttribute="leading" secondItem="1Wr-5l-Ngc" secondAttribute="trailing" constant="2" id="JUB-Ua-gld"/>
+                            <constraint firstAttribute="trailing" secondItem="KA4-xS-jKj" secondAttribute="trailing" constant="2" id="NS0-Cg-oRE"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="height" secondItem="W1Y-HS-icv" secondAttribute="height" id="Pfl-0O-KHH"/>
+                            <constraint firstItem="gkr-7K-Ns4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="2" id="Psb-kW-vh8"/>
+                            <constraint firstAttribute="trailing" secondItem="gkr-7K-Ns4" secondAttribute="trailing" constant="2" id="TLd-vo-fTq"/>
+                            <constraint firstItem="GXo-lX-dFM" firstAttribute="leading" secondItem="W1Y-HS-icv" secondAttribute="trailing" constant="2" id="Ui5-kC-Akn"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="width" secondItem="1Wr-5l-Ngc" secondAttribute="width" id="XUr-aR-cJi"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="width" secondItem="gkr-7K-Ns4" secondAttribute="width" id="Xea-0y-v53"/>
+                            <constraint firstItem="1Wr-5l-Ngc" firstAttribute="top" secondItem="W1Y-HS-icv" secondAttribute="bottom" constant="2" id="YSp-VL-4rC"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KA4-xS-jKj" secondAttribute="bottom" constant="2" id="Z8r-Tt-o3T"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="height" secondItem="1Wr-5l-Ngc" secondAttribute="height" id="dJq-s6-0op"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="height" secondItem="GXo-lX-dFM" secondAttribute="height" id="gBP-t4-HRt"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="height" secondItem="KA4-xS-jKj" secondAttribute="height" id="lT8-Ls-Rhh"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="2" id="mvd-wC-E7I"/>
+                            <constraint firstItem="GXo-lX-dFM" firstAttribute="top" secondItem="gkr-7K-Ns4" secondAttribute="bottom" constant="2" id="mxS-x2-9Hw"/>
+                            <constraint firstItem="W1Y-HS-icv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="2" id="nnZ-Z8-57m"/>
+                            <constraint firstAttribute="trailing" secondItem="GXo-lX-dFM" secondAttribute="trailing" constant="2" id="o7C-ck-UdS"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="width" secondItem="KA4-xS-jKj" secondAttribute="width" id="s5h-XH-ghK"/>
+                            <constraint firstItem="KA4-xS-jKj" firstAttribute="top" secondItem="GXo-lX-dFM" secondAttribute="bottom" constant="2" id="taI-YW-s8F"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="width" secondItem="GXo-lX-dFM" secondAttribute="width" id="vnw-lh-mTP"/>
+                            <constraint firstItem="KNd-6T-G9D" firstAttribute="height" secondItem="gkr-7K-Ns4" secondAttribute="height" id="zoA-DX-GX0"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5CI-ws-FrR" appends="YES" id="vJi-9B-z9E"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Playlists" id="meM-bn-NPb"/>
+                    <connections>
+                        <outletCollection property="playlistImageViews" destination="KNd-6T-G9D" id="RTC-DR-t6k"/>
+                        <outletCollection property="playlistImageViews" destination="gkr-7K-Ns4" id="HbV-HW-0vu"/>
+                        <outletCollection property="playlistImageViews" destination="W1Y-HS-icv" id="xD8-iv-Bsb"/>
+                        <outletCollection property="playlistImageViews" destination="GXo-lX-dFM" id="jpM-3g-NlT"/>
+                        <outletCollection property="playlistImageViews" destination="1Wr-5l-Ngc" id="Hu1-tX-JKz"/>
+                        <outletCollection property="playlistImageViews" destination="KA4-xS-jKj" id="xZG-RN-9Nx"/>
+                        <segue destination="pBR-VQ-I5I" kind="push" identifier="showPlaylistDetail" id="xbI-EL-bnb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5CI-ws-FrR">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="vXZ-lx-hvc" id="2UB-AH-Xs7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hxe-dF-jxv">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="vXZ-lx-hvc" id="Dta-KK-lRB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="etr-AP-gua">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="vXZ-lx-hvc" id="ZMT-Um-rDA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qfR-wT-lXx">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="vXZ-lx-hvc" id="jGq-jc-aIw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="kiq-ss-qoI">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="vXZ-lx-hvc" id="FdE-LX-eEe"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Wda-GB-qNr">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="vXZ-lx-hvc" id="JYM-v3-o6o"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="405" y="274"/>
+        </scene>
+        <!--Artists-->
+        <scene sceneID="IH3-2N-UVU">
+            <objects>
+                <viewController id="pBR-VQ-I5I" customClass="PlaylistDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LOr-UC-3Fm"/>
+                        <viewControllerLayoutGuide type="bottom" id="abD-Sr-A2p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zpc-oV-7ny">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C6V-HR-eWI">
+                                <rect key="frame" x="0.0" y="64" width="320" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C6V-HR-eWI" secondAttribute="height" multiplier="32:29" id="Enl-eX-O6F"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QsC-Rh-HUf">
+                                <rect key="frame" x="0.0" y="264" width="320" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML7-Oc-tUP">
+                                        <rect key="frame" x="20" y="10" width="118.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5S-zi-VD9">
+                                        <rect key="frame" x="20" y="38" width="280" height="42.5"/>
+                                        <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QsC-Rh-HUf" secondAttribute="height" multiplier="32:9" id="B7o-i4-Z3S"/>
+                                    <constraint firstAttribute="trailing" secondItem="g5S-zi-VD9" secondAttribute="trailing" constant="20" id="J6z-1h-bCx"/>
+                                    <constraint firstItem="ML7-Oc-tUP" firstAttribute="top" secondItem="QsC-Rh-HUf" secondAttribute="top" constant="10" id="JXS-Wm-ZEW"/>
+                                    <constraint firstItem="g5S-zi-VD9" firstAttribute="leading" secondItem="QsC-Rh-HUf" secondAttribute="leading" constant="20" id="TJK-7Z-dr2"/>
+                                    <constraint firstItem="ML7-Oc-tUP" firstAttribute="leading" secondItem="QsC-Rh-HUf" secondAttribute="leading" constant="20" id="k0T-Qp-aTT"/>
+                                    <constraint firstItem="g5S-zi-VD9" firstAttribute="top" secondItem="ML7-Oc-tUP" secondAttribute="bottom" constant="8" id="oRl-HP-cC5"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wc-ol-pl1">
+                                <rect key="frame" x="20" y="374" width="48.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ai1-f7-eIY">
+                                <rect key="frame" x="20" y="407" width="95.5" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bl-hV-Ld2">
+                                <rect key="frame" x="20" y="432" width="95.5" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcA-my-qjI">
+                                <rect key="frame" x="20" y="457" width="95.5" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5bl-hV-Ld2" firstAttribute="top" secondItem="ai1-f7-eIY" secondAttribute="bottom" constant="8" id="46q-JW-wYd"/>
+                            <constraint firstItem="4wc-ol-pl1" firstAttribute="top" secondItem="QsC-Rh-HUf" secondAttribute="bottom" constant="20" id="4hN-fD-8UK"/>
+                            <constraint firstItem="C6V-HR-eWI" firstAttribute="top" secondItem="LOr-UC-3Fm" secondAttribute="bottom" id="5xu-Zc-27s"/>
+                            <constraint firstAttribute="trailing" secondItem="C6V-HR-eWI" secondAttribute="trailing" id="CAP-5O-Xil"/>
+                            <constraint firstItem="4wc-ol-pl1" firstAttribute="leading" secondItem="Zpc-oV-7ny" secondAttribute="leading" constant="20" id="LSN-cz-FZG"/>
+                            <constraint firstItem="C6V-HR-eWI" firstAttribute="bottom" secondItem="QsC-Rh-HUf" secondAttribute="bottom" id="Lif-VC-R54"/>
+                            <constraint firstItem="5bl-hV-Ld2" firstAttribute="leading" secondItem="Zpc-oV-7ny" secondAttribute="leading" constant="20" id="TuL-86-mhr"/>
+                            <constraint firstItem="ai1-f7-eIY" firstAttribute="top" secondItem="4wc-ol-pl1" secondAttribute="bottom" constant="13" id="Zxs-mU-Rmg"/>
+                            <constraint firstItem="dcA-my-qjI" firstAttribute="leading" secondItem="Zpc-oV-7ny" secondAttribute="leading" constant="20" id="eHP-QB-AGj"/>
+                            <constraint firstItem="dcA-my-qjI" firstAttribute="top" secondItem="5bl-hV-Ld2" secondAttribute="bottom" constant="8" id="k4h-Wb-KZo"/>
+                            <constraint firstItem="ai1-f7-eIY" firstAttribute="leading" secondItem="Zpc-oV-7ny" secondAttribute="leading" constant="20" id="lBT-R5-LN3"/>
+                            <constraint firstItem="C6V-HR-eWI" firstAttribute="leading" secondItem="Zpc-oV-7ny" secondAttribute="leading" id="lov-dH-q45"/>
+                            <constraint firstItem="QsC-Rh-HUf" firstAttribute="leading" secondItem="Zpc-oV-7ny" secondAttribute="leading" id="qW0-Di-1G5"/>
+                            <constraint firstAttribute="trailing" secondItem="QsC-Rh-HUf" secondAttribute="trailing" id="v5v-R6-iC5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artists" id="fXu-ME-DZl"/>
+                    <connections>
+                        <outlet property="playlistArtist0" destination="ai1-f7-eIY" id="r3X-xa-OYL"/>
+                        <outlet property="playlistArtist1" destination="5bl-hV-Ld2" id="GOL-ZZ-bgv"/>
+                        <outlet property="playlistArtist2" destination="dcA-my-qjI" id="8Er-JD-JOR"/>
+                        <outlet property="playlistCoverImage" destination="C6V-HR-eWI" id="Roi-DC-fW5"/>
+                        <outlet property="playlistDescription" destination="g5S-zi-VD9" id="MN2-SH-77c"/>
+                        <outlet property="playlistTitle" destination="ML7-Oc-tUP" id="zLs-lm-thD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upQ-Zy-1Fw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="274"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Jo-3G-X8p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m0A-Bh-JRa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="kJz-Nc-qix">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Oig-yQ-xHO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHU-bu-wDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="274"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="66" height="73"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
